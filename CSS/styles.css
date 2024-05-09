@@ -1,0 +1,120 @@
+/* Estilos generales */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222; /* Fondo oscuro */
+    font-family: 'Roboto', sans-serif; /* Fuente de letras */
+    color: #fff; /* Texto blanco */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333; /* Fondo oscuro para el contenedor */
+    padding: 20px; /* Espacio alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados para el contenedor */
+}
+
+/* Estilos para el tablero */
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 columnas por fila */
+    grid-template-rows: repeat(5, 1fr); /* 5 filas */
+    max-width: 90vw; /* Ancho máximo del tablero */
+    max-height: 50vh; /* Alto máximo del tablero */
+    width: min(90vw, 500px); /* Ancho del tablero limitado a 500px */
+    height: min(90vw, 250px); /* Alto del tablero limitado a 250px */
+    margin-bottom: 20px; /* Espacio entre el tablero y el botón */
+    background-color: #444; /* Fondo oscuro para el tablero */
+    border-radius: 10px; /* Bordes redondeados para el tablero */
+}
+
+.cell {
+    position: relative; /* Establece la posición relativa para que la X pueda ser posicionada de forma absoluta dentro de la celda */
+    border: 2px solid #495057; /* Grosor del borde de las celdas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; /* Tamaño de la fuente */
+    cursor: pointer;
+    width: calc(100% - 4px); /* Ancho de la celda (se resta el grosor del borde) */
+    height: calc(100% - 4px); /* Alto de la celda (se resta el grosor del borde) */
+    background-color: #555; /* Fondo oscuro para las celdas */
+    border-color: #333; /* Borde oscuro para las celdas */
+}
+
+.cell:hover {
+    background-color: #343a40; /* Color de fondo al pasar el ratón sobre las celdas */
+}
+
+.marked::after {
+    content: 'X';
+    position: absolute; /* Establece la posición absoluta para que la X se pueda colocar encima del número */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px; /* Tamaño de la fuente de la X */
+    color: #dc3545; /* Color de la X */
+    font-weight: bold; /* Peso de la fuente de la X */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de la X */
+}
+
+/* Estilos para el botón */
+
+.reset-button {
+    border: 2px solid #fff; /* Borde blanco */
+    font-size: 18px; /* Tamaño de fuente */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer;
+    width: 100%; /* Para que el botón ocupe todo el ancho disponible */
+    max-width: 300px; /* Ancho máximo para evitar que el botón se vuelva demasiado ancho en pantallas grandes */
+    box-sizing: border-box; /* Para que el padding no afecte al ancho */
+    background-color: #333; /* Fondo oscuro */
+    border-color: #555; /* Borde oscuro para el botón */
+    color: #fff; /* Texto blanco */
+}
+
+.reset-button:hover {
+    background-color: #555; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilos para el encabezado */
+.header {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre el encabezado y el tablero */
+}
+
+/* Estilos para la lista de menú */
+.menu {
+    list-style: none;
+    padding: 0;
+    display: inline; /* Agregamos esta línea para mostrar la lista en línea */
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff; /* Cambiamos el color del enlace a blanco */
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}

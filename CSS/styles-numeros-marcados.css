@@ -1,0 +1,104 @@
+/* Estilos específicos para la página numeros-marcados.html */
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #212121;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+a {
+    color: #64b5f6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+.delete-button {
+    color: #fff;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+li > *:not(:last-child) {
+    margin-right: 12px; /* Agregar espacio entre elementos */
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #444;
+    color: #fff;
+    margin-left: 10px; /* Agregar un margen a la izquierda del campo de texto */
+}
+
+/* Ocultar el botón de borrado predeterminado */
+input[type="text"]::-webkit-search-cancel-button,
+input[type="text"]::-ms-clear {
+    display: none;
+}
+
+/* Estilos para el botón de borrado */
+.delete-button {
+    background-color: transparent;
+    border: 2px solid #ff5252;
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: #ff5252;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #ff5252;
+    color: #fff;
+}
+
+/* Estilos para el botón de "volver a la página principal" */
+header a[href="/Project/Main/index.html"] {
+    color: #64b5f6; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s; /* Transición suave al cambiar el color */
+}
+
+header a[href="/Project/Main/index.html"]:hover {
+    color: #42a5f5; /* Color del enlace al pasar el cursor */
+}
