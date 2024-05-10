@@ -1,7 +1,7 @@
 /* Estilos específicos para la página numeros-marcados.html */
 
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'inter', sans-serif;
     background-color: #121212;
     color: #e0e0e0;
     margin: 0;
@@ -93,12 +93,12 @@ input[type="text"]::-ms-clear {
 }
 
 /* Estilos para el botón de "volver a la página principal" */
-header a[href="/Project/Main/index.html"] {
+header a[href="index.html"] {
     color: #64b5f6; /* Color del enlace */
     text-decoration: none; /* Sin subrayado */
     transition: color 0.3s; /* Transición suave al cambiar el color */
 }
 
-header a[href="/Project/Main/index.html"]:hover {
+header a[href="index.html"]:hover {
     color: #42a5f5; /* Color del enlace al pasar el cursor */
 }

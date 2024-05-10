@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #222; /* Fondo oscuro */
-    font-family: 'Roboto', sans-serif; /* Fuente de letras */
+    font-family: 'inter', sans-serif; /* Fuente de letras */
     color: #fff; /* Texto blanco */
 }
 
