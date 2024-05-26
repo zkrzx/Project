@@ -43,6 +43,7 @@ Este proyecto se ha llevado a cabo gracias a la colaboración y el apoyo de dive
 <p align="center">
 <img src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg">
 <img src="https://img.shields.io/badge/Made%20with-Karma-1f425f.svg">
+    <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg">
 </p>
 
 <p align="center">
