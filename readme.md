@@ -33,13 +33,6 @@ La página web de sorteos y rifas está diseñada para ser intuitiva y fácil de
 
 ¡Espero que esta guía te sea útil para aprovechar todas las funciones de la página de sorteos y rifas!
 
-## Agradecimientos
-
-Este proyecto se ha llevado a cabo gracias a la colaboración y el apoyo de diversas personas y recursos. Quisiera expresar mi más sincero agradecimiento a:
-
--   **ChatGPT:** Por su invaluable asistencia en el desarrollo y la implementación de este proyecto.
--   **OpenAI:** Por proporcionar la tecnología y la plataforma que hicieron posible la creación de esta aplicación.
-
 <p align="center">
 <img src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg">
 <img src="https://img.shields.io/badge/Made%20with-Karma-1f425f.svg">
